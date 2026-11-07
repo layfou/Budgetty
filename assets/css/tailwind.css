@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased bg-gray-50 text-gray-900;
+    font-family: 'Inter', 'Noto Sans Khmer', ui-sans-serif, system-ui, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  /* The ៛ symbol should always use the Khmer font stack */
+  .khmer {
+    font-family: 'Noto Sans Khmer', ui-sans-serif, sans-serif;
+  }
+
+  .min-touch {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
